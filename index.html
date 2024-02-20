@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nigeria Food Recipes</title>
+  </head>
+  <!----======= Custom Css =======----->
+  <link rel="stylesheet" href="./src/css/index.css" />
+  <!----======= Bootstrap Css =======----->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <!----======= Custom Js =======----->
+  <script defer src="/src/js/main.js"></script>
+  <!----======= Bootstrap Css Icons =======----->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+  <!----=========GOOGLE FONT========---->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet"
+  />
+
+  <body>
+    <!----======= Navbar menu =======----->
+    <nav
+      class="navbar fixed-top navbar-expand-lg"
+      style="
+        background: #f8f8ff;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      "
+    >
+      <div class="container-xxl">
+        <a class="navbar-brand pl-3 text-black" href="#Brand"
+          ><span
+            class="lead fw-bolder fs-4 me-3"
+            style="
+              margin-left: 1rem;
+              font-family: Kanit, sans-serif;
+              font-weight: 400;
+              font-style: normal;
+            "
+            >Maliki</span
+          ></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center align-center"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav p-2 gap-3 mb-2 mb-lg-0"
+            style="
+              font-family: Kanit, sans-serif;
+              font-weight: 300;
+              font-style: normal;
+            "
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link active text-black text-end text-md-center"
+                aria-current="page"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black text-end text-md-center"
+                href="#about"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black text-end text-md-center"
+                href="#services"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black text-end text-md-center"
+                href="#team"
+                >Gateway</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-black text-end text-md-center"
+                href="#contact"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="btn btn-lg text-white rounded-pill d-none d-md-block"
+          style="
+            background-color: #111;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            font-size: 14px;
+            font-family: Kanit, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          "
+        >
+          Register
+        </button>
+      </div>
+    </nav>
+    <!----======= Hero section =======----->
+    <section style="padding: 80px 0">
+      <div class="mt-2 container">
+        <div class="row justify-content-center">
+          <!---col one-->
+          <div class="col-md-5 p-3 text-start text-md-start">
+            <h2
+              class="fs-1 text-black"
+              style="
+                font-family: Kanit, sans-serif;
+                font-weight: 600;
+                font-style: normal;
+              "
+            >
+              WELCOME TO MALIKI FOOD RECIPES
+            </h2>
+            <h4>Search recipes with APIs, explore cuisines and more</h4>
+
+            <button
+              type="button"
+              class="btn btn-lg text-white rounded-pill d-none d-md-block"
+              style="
+                background-color: #111;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                font-size: 14px;
+                font-family: Kanit, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+              "
+            >
+              Get Started
+            </button>
+          </div>
+          <!---col two-->
+          <div class="col-md-5">
+            <img class="img-fluid rounded" src="./assets/hero-img.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----======= feature recipes selection section =======----->
+    <section style="padding: 80px 30px">
+      <div class="container-lg">
+        <!---Heading---->
+        <h1
+          style="
+            font-family: Kanit, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+          "
+        >
+          FEATURED RECIPES SELECTION
+        </h1>
+        <p
+          style="
+            font-family: Kanit, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          "
+        >
+          Handpick dishes from around the country
+        </p>
+        <!--first row-->
+        <div class="row justify-content-around">
+          <!--first col-->
+          <div class="col-md-3 p-2">
+            <div class="card" style="width: 100%">
+              <img src="./assets/f1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p
+                  class="card-text"
+                  style="
+                    font-family: Kanit, sans-serif;
+                    font-weight: 200;
+                    font-style: normal;
+                  "
+                >
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--second col-->
+          <div class="col-md-3 p-2">
+            <div class="card" style="width: 100%">
+              <img src="./assets/f5.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p
+                  class="card-text"
+                  style="
+                    font-family: Kanit, sans-serif;
+                    font-weight: 200;
+                    font-style: normal;
+                  "
+                >
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--third col-->
+          <div class="col-md-3 p-2">
+            <div class="card" style="width: 100%">
+              <img src="./assets/f3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p
+                  class="card-text"
+                  style="
+                    font-family: Kanit, sans-serif;
+                    font-weight: 200;
+                    font-style: normal;
+                  "
+                >
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--fourth col-->
+          <div class="col-md-3 p-2">
+            <div class="card" style="width: 100%">
+              <img
+                src="./assets/f4.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <p
+                  class="card-text"
+                  style="
+                    font-family: Kanit, sans-serif;
+                    font-weight: 200;
+                    font-style: normal;
+                  "
+                >
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--second row-->
+        <div class="row justify-content-around">
+          <!--first col-->
+          <div class="col-md-3 p-2">
+            <div class="card" style="width: 100%">
+              <img src="./assets/c1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--second col-->
+          <div class="col-md-3 p-2">
+            <div class="card" style="width: 100%">
+              <img src="./assets/c2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--third col-->
+          <div class="col-md-3 p-2">
+            <div class="card" style="width: 100%">
+              <img src="./assets/c3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--fourth col-->
+          <div class="col-md-3 p-2">
+            <div class="card" style="width: 100%">
+              <img
+                src="./assets/c4.jpg"
+                class="card-img-top img-fluid"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----======= Navigate section =======----->
+    <section style="padding: 80px 30px">
+      <div class="container-lg text-center">
+        <!---Heading---->
+        <h1
+          class="fs-2"
+          style="
+            font-family: Kanit, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+          "
+        >
+          Navigate Your Culinary Journey
+        </h1>
+        <p
+          style="
+            font-family: Kanit, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          "
+        >
+          Explore How Maliki Gateway Works
+        </p>
+        <!--first row-->
+        <div class="row justify-content-around">
+          <!--first col-->
+          <div class="col-md-3 p-2">
+            <div class="card" style="width: 100%">
+              <img src="./assets/b2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text"></p>
+                <p
+                  class="fs-5 text-mute"
+                  style="
+                    font-family: Kanit, sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                  "
+                >
+                  step 1
+                </p>
+
+                <h5
+                  class="text-black"
+                  style="
+                    font-family: Kanit, sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                  "
+                >
+                  Search Food
+                </h5>
+              </div>
+            </div>
+          </div>
+          <!--second col-->
+          <div class="col-md-3 p-2">
+            <div class="card" style="width: 100%">
+              <img src="./assets/b3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text"></p>
+                <p
+                  class="fs-5 text-mute"
+                  style="
+                    font-family: Kanit, sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                  "
+                >
+                  step 2
+                </p>
+
+                <h5
+                  class="text-black"
+                  style="
+                    font-family: Kanit, sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                  "
+                >
+                  Click the recipe button
+                </h5>
+              </div>
+            </div>
+          </div>
+          <!--third col-->
+          <div class="col-md-3 p-2">
+            <div class="card" style="width: 100%">
+              <img src="./assets/b4.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text"></p>
+                <p
+                  class="text-mute"
+                  style="
+                    font-family: Kanit, sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                  "
+                >
+                  step 3
+                </p>
+
+                <h5
+                  class="text-black fs-5"
+                  style="
+                    font-family: Kanit, sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                  "
+                >
+                  Recipes and Instructions are below your search results
+                </h5>
+              </div>
+            </div>
+          </div>
+          <!--fourth col-->
+          <div class="col-md-3 p-2">
+            <div class="card" style="width: 100%">
+              <img src="./assets/b5 (2).jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text"></p>
+                <p
+                  class="text-mute"
+                  style="
+                    font-family: Kanit, sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                  "
+                >
+                  step 4
+                </p>
+
+                <h5
+                  class="text-black"
+                  style="
+                    font-family: Kanit, sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                  "
+                >
+                  Start cooking
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----======= search section =======----->
+    <section style="padding: 80px 30px">
+      <div class="container-lg">
+        <div class="row justify-content-center align-center">
+          <div class="col-md-5">
+            <input
+              class="form-control mb-2"
+              id="search-Input"
+              type="text"
+              placeholder="Enter a food"
+              aria-label="default input example"
+              style="
+                width: 300px;
+                font-family: Kanit, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+              "
+            />
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="search-recipes"
+              style="
+                background-color: #111;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                font-size: 14px;
+                font-family: Kanit, sans-serif;
+                font-weight: 400;
+                font-style: normal;
+              "
+            >
+              Search food
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----======= search result =======----->
+    <section id="search-results" style="padding: 80px 30px">
+      <div class="meal-result">
+        <h2
+          class="title"
+          style="
+            font-family: Kanit, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+          "
+        >
+          Your Search Results:
+        </h2>
+        <div class="error"></div>
+        <div id="meal"></div>
+      </div>
+      <!-- meal content -->
+      <div class="meal-details-content" id="recipe"></div>
+    </section>
+
+    <!----======= stay updated =======----->
+    <section style="padding: 80px 30px">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <!---col one-->
+          <div class="col-md-5">
+            <h1
+              class="text-black"
+              style="
+                margin-left: 1rem;
+                font-family: Kanit, sans-serif;
+                font-weight: 500;
+                font-style: normal;
+              "
+            >
+              STAY UPDATED WITH MALIKI RECIPES
+            </h1>
+            <p
+              style="
+                margin-left: 1rem;
+                font-family: Kanit, sans-serif;
+                font-weight: 300;
+                font-style: normal;
+              "
+            >
+              Subscribe for weekly inspiration
+            </p>
+            <div class="d-flex justify-content-around">
+              <input
+                type="password"
+                id="inputPassword6"
+                placeholder="Your Email"
+                class="form-control"
+                aria-describedby="passwordHelpInline"
+                style="
+                  width: 300px;
+                  font-family: Kanit, sans-serif;
+                  font-weight: 400;
+                  font-style: normal;
+                "
+              />
+              <button
+                type="button"
+                class="btn btn-primary btn-lg"
+                style="
+                  background-color: #111;
+                  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                  font-size: 14px;
+                  font-family: Kanit, sans-serif;
+                  font-weight: 300;
+                  font-style: normal;
+                "
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----======= footer section =======----->
+    <section class="" style="padding: 80px 0">
+      <div class="container-lg">
+        <div class="row">
+          <!--col one-->
+          <div class="col-7 col-md-5">
+            <a class="navbar-brand pl-3 text-black" href="#Brand"
+              ><span
+                class="lead fw-bolder fs-4 me-3"
+                style="
+                  margin-left: 1rem;
+                  font-family: Kanit, sans-serif;
+                  font-weight: 400;
+                  font-style: normal;
+                "
+                >Maliki</span
+              ></a
+            >
+
+            <p
+              style="
+                font-family: Kanit, sans-serif;
+                font-weight: 200;
+                font-style: normal;
+              "
+            >
+              copyright @ 2024 Maliki . All rights reserved.
+            </p>
+          </div>
+
+          <!--col two-->
+          <div class="col col-md-2">
+            <ul
+              style="
+                font-family: Kanit, sans-serif;
+                font-weight: 200;
+                font-style: normal;
+                color: #000;
+              "
+            >
+              <li><a href="">ABOUT US</a></li>
+              <li><a href="">OURS SERVICES</a></li>
+              <li><a href="">OURS CLINICS</a></li>
+              <li><a href="">DENTIST</a></li>
+            </ul>
+          </div>
+
+          <!--col three-->
+          <div class="col col-md-2">
+            <ul
+              style="
+                font-family: Kanit, sans-serif;
+                font-weight: 200;
+                font-style: normal;
+                color: #000;
+              "
+            >
+              <li><a href="">LOCATION</a></li>
+              <li><a href="">CAREER</a></li>
+              <li><a href="">PRIVACY POLICY</a></li>
+              <li><a href="">TERMS OF SERVICE</a></li>
+            </ul>
+          </div>
+
+          <!--col four-->
+          <div class="col col-md-2">
+            <ul
+              style="
+                font-family: Kanit, sans-serif;
+                font-weight: 200;
+                font-style: normal;
+                color: #000;
+              "
+            >
+              <li><a href="">INSTAGRAM</a></li>
+              <li><a href="">TWITTER</a></li>
+              <li><a href="">THREADS</a></li>
+              <li><a href="">TIKTOK</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----======= Bootsrap Js =======----->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
